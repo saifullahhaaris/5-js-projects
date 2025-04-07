@@ -1,0 +1,60 @@
+const quotes = [
+    "Be yourself; everyone else is already taken. – Oscar Wilde",
+    "In the middle of difficulty lies opportunity. – Albert Einstein",
+    "Do what you can, with what you have, where you are. – Theodore Roosevelt",
+    "Success is not final, failure is not fatal: It is the courage to continue that counts. – Winston Churchill",
+    "Happiness depends upon ourselves. – Aristotle",
+    "It does not matter how slowly you go as long as you do not stop. – Confucius",
+    "The only way to do great work is to love what you do. – Steve Jobs",
+    "Believe you can and you're halfway there. – Theodore Roosevelt",
+    "What lies behind us and what lies before us are tiny matters compared to what lies within us. – Ralph Waldo Emerson",
+    "Your time is limited, so don’t waste it living someone else’s life. – Steve Jobs",
+    "I have not failed. I've just found 10,000 ways that won't work. – Thomas Edison",
+    "Act as if what you do makes a difference. It does. – William James",
+    "You miss 100% of the shots you don’t take. – Wayne Gretzky",
+    "Turn your wounds into wisdom. – Oprah Winfrey",
+    "The purpose of our lives is to be happy. – Dalai Lama",
+    "Don’t watch the clock; do what it does. Keep going. – Sam Levenson",
+    "The best way to predict your future is to create it. – Abraham Lincoln",
+    "Everything you’ve ever wanted is on the other side of fear. – George Addair",
+    "Life is what happens when you’re busy making other plans. – John Lennon",
+    "It always seems impossible until it's done. – Nelson Mandela",
+    "The future belongs to those who believe in the beauty of their dreams. – Eleanor Roosevelt",
+  "Don’t let yesterday take up too much of today. – Will Rogers",
+  "You are never too old to set another goal or to dream a new dream. – C.S. Lewis",
+  "Try not to become a man of success. Rather become a man of value. – Albert Einstein",
+  "Opportunities don't happen. You create them. – Chris Grosser",
+  "Strive not to be a success, but rather to be of value. – Albert Einstein",
+  "Dream big and dare to fail. – Norman Vaughan",
+  "Life is short, and it is up to you to make it sweet. – Sarah Louise Delany",
+  "Do one thing every day that scares you. – Eleanor Roosevelt",
+  "We become what we think about. – Earl Nightingale",
+  "If you want to lift yourself up, lift up someone else. – Booker T. Washington",
+  "Don't wait. The time will never be just right. – Napoleon Hill",
+  "Either you run the day or the day runs you. – Jim Rohn",
+  "Well done is better than well said. – Benjamin Franklin",
+  "The best revenge is massive success. – Frank Sinatra",
+  "It’s not whether you get knocked down, it’s whether you get up. – Vince Lombardi",
+  "The only limit to our realization of tomorrow is our doubts of today. – Franklin D. Roosevelt",
+  "Too many of us are not living our dreams because we are living our fears. – Les Brown",
+  "Challenges are what make life interesting and overcoming them is what makes life meaningful. – Joshua Marine",
+  "If you’re going through hell, keep going. – Winston Churchill",
+  "Success usually comes to those who are too busy to be looking for it. – Henry David Thoreau",
+  "Hardships often prepare ordinary people for an extraordinary destiny. – C.S. Lewis",
+  "Great minds discuss ideas; average minds discuss events; small minds discuss people. – Eleanor Roosevelt",
+  "Don’t count the days, make the days count. – Muhammad Ali",
+  "Action is the foundational key to all success. – Pablo Picasso",
+  "Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart. – Roy T. Bennett",
+  "A person who never made a mistake never tried anything new. – Albert Einstein",
+  "Start where you are. Use what you have. Do what you can. – Arthur Ashe",
+  "If you want something you never had, you have to do something you’ve never done. – Thomas Jefferson",
+  "I would rather die of passion than of boredom. – Vincent van Gogh"
+  ];
+  
+  const quoteElement = document.getElementById("quote")
+
+  function generateQuote() {
+    const quoteIdenx = Math.floor(Math.random()*quotes.length)
+    const quote = quotes[quoteIdenx]
+    quoteElement.innerHTML=quote
+  }
